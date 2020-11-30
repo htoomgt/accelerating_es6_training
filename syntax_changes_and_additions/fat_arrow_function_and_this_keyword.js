@@ -7,4 +7,7 @@ function fn(){
 
 let fn2 = () => console.log(this);
 
-fn2();
+// fn2();
+
+let button = document.querySelector("button");
+button.addEventListener("click", fn2);
