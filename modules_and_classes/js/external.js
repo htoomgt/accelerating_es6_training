@@ -5,5 +5,6 @@ let test = () => {
     myName = "Htoo Maung Thait";
     console.log("tested!");
 }
-// test();
+let ab = 'Some text';
 export {keyValue, test, myName};
+// export default ab;
