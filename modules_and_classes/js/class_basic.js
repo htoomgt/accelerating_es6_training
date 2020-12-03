@@ -31,3 +31,4 @@ person.greet();
 max.greet();
 max.greetTwice();
 console.log(person.__proto__ === Person.prototype);
+console.log(max.__proto__ === Person.prototype);
