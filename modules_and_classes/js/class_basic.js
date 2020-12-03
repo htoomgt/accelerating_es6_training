@@ -11,3 +11,4 @@ class Person{
 let person = new Person('Maxthon');
 // console.log(person);
 person.greet();
+console.log(person.__proto__ === Person.prototype);
