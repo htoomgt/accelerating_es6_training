@@ -17,13 +17,17 @@ let objA = {
 
 function *genA(end){
     for (let i = 0; i < end; i++){
-        yield i;
+        try {
+            yield i;
+        }catch(e){
+            console.log(e);
+        }
     }
 }
 
 let it = genA(2);
 console.log(it.next());
-console.log(it.next());
-console.log(it.next());
+console.log(it.throw('An error ocurred'));
+console.log(it.return('An error ocurred'));
 console.log(it.next());
 
